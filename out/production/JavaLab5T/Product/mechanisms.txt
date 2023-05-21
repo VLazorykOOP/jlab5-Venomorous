@@ -1,0 +1,3 @@
+Mechanism1,15.99,Steel,Type1
+Mechanism2,12.49,Plastic,Type2
+Mechanism3,9.99,Aluminum,Type1
