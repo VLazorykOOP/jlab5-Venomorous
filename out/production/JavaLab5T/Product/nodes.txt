@@ -1,3 +1,3 @@
-Node1,8.99,Plastic,1
-Node2,6.99,Steel,2
-Node3,11.49,Aluminum,3
+Node5,8.99,Plastic,1
+Node3,6.99,Steel,2
+Node1,11.49,Aluminum,3

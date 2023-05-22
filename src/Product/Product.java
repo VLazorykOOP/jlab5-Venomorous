@@ -25,11 +25,11 @@ public class Product implements Comparable<Product> {
         this.price = price;
     }
 
-    String getName(){
+    public String getName(){
         return name;
     }
 
-    double getPrice(){
+    public double getPrice(){
         return price;
     }
 
