@@ -23,10 +23,10 @@ public class Main {
                     List<Product> products = new ArrayList<>();
                     List<Component> components = new ArrayList<>();
 
-                    String componentsPath = "C:\\Users\\gurki\\IdeaProjects\\jlab5-Venomorous\\src\\Product\\components.txt";
+                    String componentsPath = "C:\\Users\\User\\IdeaProjects\\jlab5-Venomorous\\src\\Product\\components.txt";
 
                     while (true) {
-                        System.out.print("Enter the path to the republics list file : ");
+                        System.out.print("Enter the path to the components list file : ");
 //            componentsPath = scanner.nextLine();
                         File republcsFile = new File(componentsPath);
                         if (!republcsFile.exists()) {
@@ -42,6 +42,7 @@ public class Main {
                     System.out.println("\nInformation from file: " + componentsPath);
                     System.out.println();
                     for (Component component : components) {
+                        System.out.println("Component:");
                         component.show();
                         System.out.println();
                     }
@@ -58,9 +59,9 @@ public class Main {
                     append = scanner.nextLine();
 
                     if (append.equalsIgnoreCase("y")) {
-                        Component newRepublic = Component.getComponentFromInput();
-                        components.add(newRepublic);
-                        Product.writeToFile(componentsPath, newRepublic);
+                        Component newComponent = Component.getComponentFromInput();
+                        components.add(newComponent);
+                        Product.writeToFile(componentsPath, newComponent);
 
                         System.out.println("\nSorted by price after adding:\n");
                         Collections.sort(components);
@@ -73,7 +74,7 @@ public class Main {
 
                     List<Mechanism> mechanisms = new ArrayList<>();
 
-                    String mechanismsPath = "C:\\Users\\gurki\\IdeaProjects\\jlab5-Venomorous\\src\\Product\\mechanisms.txt";
+                    String mechanismsPath = "C:\\Users\\User\\IdeaProjects\\jlab5-Venomorous\\src\\Product\\mechanisms.txt";
 
                     while (true) {
                         System.out.print("Enter the path to the mechanisms list file : ");
@@ -103,7 +104,7 @@ public class Main {
                         System.out.println();
                     }
 
-                    System.out.print("Do you want to add a new component? (y/n) ");
+                    System.out.print("Do you want to add a new mechanism? (y/n) ");
                     append = scanner.nextLine();
 
                     if (append.equalsIgnoreCase("y")) {
@@ -122,7 +123,7 @@ public class Main {
 
                     List<Node> nodes = new ArrayList<>();
 
-                    String nodesPath = "C:\\Users\\gurki\\IdeaProjects\\jlab5-Venomorous\\src\\Product\\nodes.txt";
+                    String nodesPath = "C:\\Users\\User\\IdeaProjects\\jlab5-Venomorous\\src\\Product\\nodes.txt";
 
                     while (true) {
                         System.out.print("Enter the path to the nodes list file : ");
@@ -152,7 +153,7 @@ public class Main {
                         System.out.println();
                     }
 
-                    System.out.print("Do you want to add a new component? (y/n) ");
+                    System.out.print("Do you want to add a new node? (y/n) ");
                     append = scanner.nextLine();
 
                     if (append.equalsIgnoreCase("y")) {
