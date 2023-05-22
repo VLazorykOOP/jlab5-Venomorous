@@ -1,4 +1,5 @@
 import Product.*;
+import Task2.PoemSorting;
 import Validators.*;
 import java.io.*;
 import java.util.*;
@@ -172,7 +173,8 @@ public class Main {
                     System.out.println("-------------------------------------------------------------------------");
                     break;
                 case 2:
-                    PoemSorting();
+                    PoemSorting poemSorting = new PoemSorting();
+                    poemSorting.showMenu(scanner);
                     System.out.println("-------------------------------------------------------------------------");
                     break;
                 case 3:
