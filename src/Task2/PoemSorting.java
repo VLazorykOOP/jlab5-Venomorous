@@ -157,7 +157,7 @@ public class PoemSorting {
             System.out.println("1. Enter poem names manually");
             System.out.println("2. Read poem names from a file");
             System.out.println("3. Exit");
-            choice = scanner.nextInt();
+            choice = InputVal.validateIntegerInput(scanner);
             scanner.nextLine(); // Consume newline character
 
             switch (choice) {
@@ -166,7 +166,6 @@ public class PoemSorting {
                     sortPoemNamesByLength();
                     printSortedPoemNames();
                     writeInFile("src/Task2/sorted_poems.txt");
-//                    InputVal.validateIntegerInput(scanner);
                     break;
                 case 2:
 //                    System.out.print("Enter the file path: ");
